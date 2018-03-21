@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ironpup/learning-react-native/issues"
   },
-  "homepage": "https://github.com/ironpup/learning-react-native#readme"
+  "homepage": "https://github.com/ironpup/learning-react-native#readme",
+  "dependencies": {
+    "react-native-cli": "^2.0.1"
+  }
 }
