@@ -6,6 +6,9 @@ import {
   View
 } from 'react-native';
 
+import Description from './description';
+import BigPicture from './bigPicture';
+
 class Home extends Component {
    state = {
       myState: 'This is my state'
@@ -14,15 +17,8 @@ class Home extends Component {
    render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to your first Iphone App!
-        </Text>
-        <Text style={styles.instructions}>
-          I'm inside your phone!
-        </Text>
-        <Text style={styles.instructions}>
-          Coming at you from app.js!
-        </Text>
+        <Description />
+        <BigPicture />
       </View>
     )
   }
@@ -34,16 +30,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    backgroundColor: 'powderblue'
+  }
 });

@@ -7,7 +7,6 @@ import {
 } from 'react-native';
 
 // my components
-
 import Home from './src/overallPresentation';
 
 export default class App extends Component<Props> {
