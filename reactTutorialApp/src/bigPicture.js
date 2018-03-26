@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Image, StyleSheet} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 
 class IndividualPicture extends Component {
    render() {
@@ -12,7 +12,12 @@ class IndividualPicture extends Component {
 class BigPictureContainer extends Component {
    render() {
     return (
-      <IndividualPicture picture={this.props.picture} />
+      <View>
+        <IndividualPicture picture={this.props.picture} />
+        <Text style={styles.description}>
+          {this.props.picture.title}
+        </Text>
+      </View>
     )
   }
 }
@@ -23,5 +28,9 @@ const styles = StyleSheet.create({
   picture: {
     width: 290,
     height: 150
+  },
+  description: {
+    fontSize: 10,
+    textAlign: 'center',
   }
 });
