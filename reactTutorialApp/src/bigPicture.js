@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
   },
   description: {
     fontSize: 10,
+    margin: 10,
     textAlign: 'center',
   }
 });
