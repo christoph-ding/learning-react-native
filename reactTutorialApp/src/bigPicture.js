@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
 import {Image, StyleSheet} from 'react-native';
 
-class BigPicture extends Component {
-   state = {
-      // cezanne's apples
-      uri: 'https://i.pinimg.com/originals/18/59/bc/1859bca2c28882ba0d366a11898b6a91.jpg'
-   }
-
+class IndividualPicture extends Component {
    render() {
     return (
-      <Image source={this.state} style={styles.picture}/>
+      <Image source={this.props.picture} style={styles.picture}/>
+    )
+  }  
+}
+
+class BigPictureContainer extends Component {
+   render() {
+    return (
+      <IndividualPicture picture={this.props.picture} />
     )
   }
 }
-export default BigPicture
+
+export default BigPictureContainer
 
 const styles = StyleSheet.create({
   picture: {
